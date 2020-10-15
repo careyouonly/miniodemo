@@ -1,0 +1,14 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  datasource:
+    tomcat.*:
+    tomcat:
+      test-on-borrow: true
+      validation-query: SELECT 1
+minio:
+  END_POINT: localhost:9000
+  ACCESS_KEY: minioadmin
+  SECRET_KEY: minioadmin
